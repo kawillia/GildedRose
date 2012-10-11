@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="995b5d6d-02af-4387-9e58-6c3664922697" name="kwilliams@WS-KWILLIAMS 2012-10-05 14:57:03" runUser="CCS\kwilliams" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a1caf380-46cb-40ec-bf71-1f09af674c7e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="kwilliams_WS-KWILLIAMS 2012-10-05 14_57_03">
+      <DeploymentItem filename="C:\Users\kwilliams\Downloads\NotMyself-GildedRose-v1.0-3-gccb50d0\NotMyself-GildedRose-ccb50d0\GildedRose.Core\bin\Debug\GildedRose.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-05T14:57:03.4700929-04:00" queuing="2012-10-05T14:57:03.5040963-04:00" start="2012-10-05T14:57:03.5080967-04:00" finish="2012-10-05T14:57:03.7215142-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetStrategyReturnsAgedBrieQualityStrategyForAgedBrie" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="8bd11791-be6f-6bbc-2cd3-f330033d64da">
+      <Execution id="21389f21-9342-4a98-876c-940356be2a6a" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.Strategies.SellIn.SellInStrategyFactoryTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetStrategyReturnsAgedBrieQualityStrategyForAgedBrie" />
+    </UnitTest>
+    <UnitTest name="GetStrategyReturnsNormalQualityStrategyForNormalItem" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="1994e197-928f-3d31-fc37-5a4552c68ca8">
+      <Execution id="d2d9f14d-3b13-4f11-b42d-7ff7818437d2" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.Strategies.SellIn.SellInStrategyFactoryTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetStrategyReturnsNormalQualityStrategyForNormalItem" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1994e197-928f-3d31-fc37-5a4552c68ca8" executionId="d2d9f14d-3b13-4f11-b42d-7ff7818437d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8bd11791-be6f-6bbc-2cd3-f330033d64da" executionId="21389f21-9342-4a98-876c-940356be2a6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d2d9f14d-3b13-4f11-b42d-7ff7818437d2" testId="1994e197-928f-3d31-fc37-5a4552c68ca8" testName="GetStrategyReturnsNormalQualityStrategyForNormalItem" computerName="WS-KWILLIAMS" duration="00:00:00.0118596" startTime="2012-10-05T14:57:03.5110970-04:00" endTime="2012-10-05T14:57:03.7059136-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2d9f14d-3b13-4f11-b42d-7ff7818437d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="21389f21-9342-4a98-876c-940356be2a6a" testId="8bd11791-be6f-6bbc-2cd3-f330033d64da" testName="GetStrategyReturnsAgedBrieQualityStrategyForAgedBrie" computerName="WS-KWILLIAMS" duration="00:00:00.0003560" startTime="2012-10-05T14:57:03.7059136-04:00" endTime="2012-10-05T14:57:03.7215142-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21389f21-9342-4a98-876c-940356be2a6a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,6 +1,19 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
+*.dbmdl
+*.user
+*.suo
+*.cache
+*.log
+*.log.*
 obj
-
-# mstest test results
-TestResults
+bin
+ErrorLogs
+Packages
+*~
+*.swp
+_ReSharper*
+*.db
+*.orig
+*.rej
+*.vs10x
+CI
+TestResult.xml

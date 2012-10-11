@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="482802cf-6c8c-43f5-aaf0-9a43a21d05fb" name="kwilliams@WS-KWILLIAMS 2012-10-08 08:45:09" runUser="CCS\kwilliams" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a1caf380-46cb-40ec-bf71-1f09af674c7e">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="kwilliams_WS-KWILLIAMS 2012-10-08 08_45_09">
+      <DeploymentItem filename="C:\Users\kwilliams\Downloads\NotMyself-GildedRose-v1.0-3-gccb50d0\NotMyself-GildedRose-ccb50d0\GildedRose.Core\bin\Debug\GildedRose.Core.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-08T08:45:09.3754665-04:00" queuing="2012-10-08T08:45:09.4222683-04:00" start="2012-10-08T08:45:09.4378689-04:00" finish="2012-10-08T08:45:09.7030791-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="15" executed="15" passed="15" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="QualityOfAnItemIsNeverNegative" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="5334f3a6-73a7-3531-f824-e6113d25ab7f">
+      <Execution id="b87d09e7-9598-479f-8092-5cd430d86da2" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QualityOfAnItemIsNeverNegative" />
+    </UnitTest>
+    <UnitTest name="SellInForConjuredDecreasesByOne" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="ddf4f376-d23b-f447-f252-2fe1d83b1b05">
+      <Execution id="37473d06-4e27-4169-be57-ea9af550a95b" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SellInForConjuredDecreasesByOne" />
+    </UnitTest>
+    <UnitTest name="QualityIncreasesForAgedBrie" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="b25b1176-8d56-e62a-3696-f3a35826d4ba">
+      <Execution id="c7a04078-6546-48c3-bf56-9be09dfa491d" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QualityIncreasesForAgedBrie" />
+    </UnitTest>
+    <UnitTest name="BackstagePassQualityIncreasesByThreeWhenSellInReachesBetweenFiveAndZeroDays" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="487973b3-147d-7c24-2972-4c431dd090aa">
+      <Execution id="5e98bbcc-c200-4c5d-8dbb-3f5fde39537b" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackstagePassQualityIncreasesByThreeWhenSellInReachesBetweenFiveAndZeroDays" />
+    </UnitTest>
+    <UnitTest name="BackstagePassQualityIncreasesByTwoWhenSellInReachesBetweenSixAndTenDays" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="9aeece14-35f8-a03c-b76b-e6229850e874">
+      <Execution id="9a451710-e85d-44d2-af76-5bef058091f8" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackstagePassQualityIncreasesByTwoWhenSellInReachesBetweenSixAndTenDays" />
+    </UnitTest>
+    <UnitTest name="BackstagePassQualityDropsToZeroAfterTheConcert" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="27d60e5a-ef7a-8ef1-9964-13d0f335072f">
+      <Execution id="fabe5f68-2df8-4835-840f-3e4f463570ac" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackstagePassQualityDropsToZeroAfterTheConcert" />
+    </UnitTest>
+    <UnitTest name="SellInForAgedBrieDecreasesByOne" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="1f23eec8-cc35-f80d-1a5e-828ebf392750">
+      <Execution id="9715bee1-dd32-4817-864a-6daecaa0f169" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SellInForAgedBrieDecreasesByOne" />
+    </UnitTest>
+    <UnitTest name="SulfurasNeverHasToBeSold" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="46505c2c-0fe3-f3a0-6e81-7b857b1e2798">
+      <Execution id="2a822689-9f3d-445c-83dc-a6b2d516fe3c" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SulfurasNeverHasToBeSold" />
+    </UnitTest>
+    <UnitTest name="BackstagePassQualityIncreasesByOneTenDays" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="9202ead1-dedc-5e0d-2780-c966e630f975">
+      <Execution id="756dd41f-25f5-4125-8bff-1ad4ef3c7f6c" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BackstagePassQualityIncreasesByOneTenDays" />
+    </UnitTest>
+    <UnitTest name="SulfurasNeverDegrades" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="e11acf43-8b72-ef0a-3f56-4944d3063c48">
+      <Execution id="4ec4e888-c99b-4d4a-bfb9-68cef4ad286b" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SulfurasNeverDegrades" />
+    </UnitTest>
+    <UnitTest name="SellInForNormalItemDecreasesByOne" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="5a70c8e3-3797-968c-683e-53e240c9614d">
+      <Execution id="dafd8d00-49fb-492d-b2a0-3f00984de764" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SellInForNormalItemDecreasesByOne" />
+    </UnitTest>
+    <UnitTest name="QualityDegradesTwiceAsFastForNormalItem" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="3bcc2279-1a8f-0714-a6fd-9d4937534e55">
+      <Execution id="a65359ef-e9db-4b7b-90f8-02c3c9b6780b" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QualityDegradesTwiceAsFastForNormalItem" />
+    </UnitTest>
+    <UnitTest name="ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="a461a388-f879-aaf1-0d5b-96e359488f0b">
+      <Execution id="a4ee6a78-e7d9-4ae1-b336-a18f0ee4a135" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems" />
+    </UnitTest>
+    <UnitTest name="SellInForBackstagePassDecreasesByOne" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="40b689f2-c768-3d7f-d7eb-990bb800d1b0">
+      <Execution id="73719b9e-9315-4e4e-86a2-da73cc516dbf" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SellInForBackstagePassDecreasesByOne" />
+    </UnitTest>
+    <UnitTest name="QualityOfAnItemIsNeverGreaterThanFifty" storage="c:\users\kwilliams\downloads\notmyself-gildedrose-v1.0-3-gccb50d0\notmyself-gildedrose-ccb50d0\src\gildedroses.unittests\bin\debug\gildedroses.unittests.dll" id="241e0825-0a15-4f2d-7550-cf48efb3e3f7">
+      <Execution id="d9bb04a2-4bf5-468d-93f1-c01070174ef8" />
+      <TestMethod codeBase="C:/Users/kwilliams/Downloads/NotMyself-GildedRose-v1.0-3-gccb50d0/NotMyself-GildedRose-ccb50d0/src/GildedRoses.UnitTests/bin/Debug/GildedRoses.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="GildedRoses.UnitTests.GildedRoseProcessorTests, GildedRoses.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QualityOfAnItemIsNeverGreaterThanFifty" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1f23eec8-cc35-f80d-1a5e-828ebf392750" executionId="9715bee1-dd32-4817-864a-6daecaa0f169" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="241e0825-0a15-4f2d-7550-cf48efb3e3f7" executionId="d9bb04a2-4bf5-468d-93f1-c01070174ef8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27d60e5a-ef7a-8ef1-9964-13d0f335072f" executionId="fabe5f68-2df8-4835-840f-3e4f463570ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bcc2279-1a8f-0714-a6fd-9d4937534e55" executionId="a65359ef-e9db-4b7b-90f8-02c3c9b6780b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40b689f2-c768-3d7f-d7eb-990bb800d1b0" executionId="73719b9e-9315-4e4e-86a2-da73cc516dbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46505c2c-0fe3-f3a0-6e81-7b857b1e2798" executionId="2a822689-9f3d-445c-83dc-a6b2d516fe3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="487973b3-147d-7c24-2972-4c431dd090aa" executionId="5e98bbcc-c200-4c5d-8dbb-3f5fde39537b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5334f3a6-73a7-3531-f824-e6113d25ab7f" executionId="b87d09e7-9598-479f-8092-5cd430d86da2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a70c8e3-3797-968c-683e-53e240c9614d" executionId="dafd8d00-49fb-492d-b2a0-3f00984de764" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9202ead1-dedc-5e0d-2780-c966e630f975" executionId="756dd41f-25f5-4125-8bff-1ad4ef3c7f6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aeece14-35f8-a03c-b76b-e6229850e874" executionId="9a451710-e85d-44d2-af76-5bef058091f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a461a388-f879-aaf1-0d5b-96e359488f0b" executionId="a4ee6a78-e7d9-4ae1-b336-a18f0ee4a135" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b25b1176-8d56-e62a-3696-f3a35826d4ba" executionId="c7a04078-6546-48c3-bf56-9be09dfa491d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ddf4f376-d23b-f447-f252-2fe1d83b1b05" executionId="37473d06-4e27-4169-be57-ea9af550a95b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e11acf43-8b72-ef0a-3f56-4944d3063c48" executionId="4ec4e888-c99b-4d4a-bfb9-68cef4ad286b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9715bee1-dd32-4817-864a-6daecaa0f169" testId="1f23eec8-cc35-f80d-1a5e-828ebf392750" testName="SellInForAgedBrieDecreasesByOne" computerName="WS-KWILLIAMS" duration="00:00:00.0126367" startTime="2012-10-08T08:45:09.4378689-04:00" endTime="2012-10-08T08:45:09.6250761-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9715bee1-dd32-4817-864a-6daecaa0f169">
+    </UnitTestResult>
+    <UnitTestResult executionId="d9bb04a2-4bf5-468d-93f1-c01070174ef8" testId="241e0825-0a15-4f2d-7550-cf48efb3e3f7" testName="QualityOfAnItemIsNeverGreaterThanFifty" computerName="WS-KWILLIAMS" duration="00:00:00.0007163" startTime="2012-10-08T08:45:09.6250761-04:00" endTime="2012-10-08T08:45:09.6250761-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9bb04a2-4bf5-468d-93f1-c01070174ef8">
+    </UnitTestResult>
+    <UnitTestResult executionId="fabe5f68-2df8-4835-840f-3e4f463570ac" testId="27d60e5a-ef7a-8ef1-9964-13d0f335072f" testName="BackstagePassQualityDropsToZeroAfterTheConcert" computerName="WS-KWILLIAMS" duration="00:00:00.0004503" startTime="2012-10-08T08:45:09.6250761-04:00" endTime="2012-10-08T08:45:09.6250761-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fabe5f68-2df8-4835-840f-3e4f463570ac">
+    </UnitTestResult>
+    <UnitTestResult executionId="a65359ef-e9db-4b7b-90f8-02c3c9b6780b" testId="3bcc2279-1a8f-0714-a6fd-9d4937534e55" testName="QualityDegradesTwiceAsFastForNormalItem" computerName="WS-KWILLIAMS" duration="00:00:00.0003364" startTime="2012-10-08T08:45:09.6406767-04:00" endTime="2012-10-08T08:45:09.6406767-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a65359ef-e9db-4b7b-90f8-02c3c9b6780b">
+    </UnitTestResult>
+    <UnitTestResult executionId="73719b9e-9315-4e4e-86a2-da73cc516dbf" testId="40b689f2-c768-3d7f-d7eb-990bb800d1b0" testName="SellInForBackstagePassDecreasesByOne" computerName="WS-KWILLIAMS" duration="00:00:00.0001970" startTime="2012-10-08T08:45:09.6406767-04:00" endTime="2012-10-08T08:45:09.6406767-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73719b9e-9315-4e4e-86a2-da73cc516dbf">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a822689-9f3d-445c-83dc-a6b2d516fe3c" testId="46505c2c-0fe3-f3a0-6e81-7b857b1e2798" testName="SulfurasNeverHasToBeSold" computerName="WS-KWILLIAMS" duration="00:00:00.0003876" startTime="2012-10-08T08:45:09.6406767-04:00" endTime="2012-10-08T08:45:09.6406767-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a822689-9f3d-445c-83dc-a6b2d516fe3c">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e98bbcc-c200-4c5d-8dbb-3f5fde39537b" testId="487973b3-147d-7c24-2972-4c431dd090aa" testName="BackstagePassQualityIncreasesByThreeWhenSellInReachesBetweenFiveAndZeroDays" computerName="WS-KWILLIAMS" duration="00:00:00.0001993" startTime="2012-10-08T08:45:09.6406767-04:00" endTime="2012-10-08T08:45:09.6406767-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e98bbcc-c200-4c5d-8dbb-3f5fde39537b">
+    </UnitTestResult>
+    <UnitTestResult executionId="b87d09e7-9598-479f-8092-5cd430d86da2" testId="5334f3a6-73a7-3531-f824-e6113d25ab7f" testName="QualityOfAnItemIsNeverNegative" computerName="WS-KWILLIAMS" duration="00:00:00.0002844" startTime="2012-10-08T08:45:09.6406767-04:00" endTime="2012-10-08T08:45:09.6562773-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b87d09e7-9598-479f-8092-5cd430d86da2">
+    </UnitTestResult>
+    <UnitTestResult executionId="dafd8d00-49fb-492d-b2a0-3f00984de764" testId="5a70c8e3-3797-968c-683e-53e240c9614d" testName="SellInForNormalItemDecreasesByOne" computerName="WS-KWILLIAMS" duration="00:00:00.0002374" startTime="2012-10-08T08:45:09.6562773-04:00" endTime="2012-10-08T08:45:09.6562773-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dafd8d00-49fb-492d-b2a0-3f00984de764">
+    </UnitTestResult>
+    <UnitTestResult executionId="756dd41f-25f5-4125-8bff-1ad4ef3c7f6c" testId="9202ead1-dedc-5e0d-2780-c966e630f975" testName="BackstagePassQualityIncreasesByOneTenDays" computerName="WS-KWILLIAMS" duration="00:00:00.0001855" startTime="2012-10-08T08:45:09.6562773-04:00" endTime="2012-10-08T08:45:09.6562773-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="756dd41f-25f5-4125-8bff-1ad4ef3c7f6c">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a451710-e85d-44d2-af76-5bef058091f8" testId="9aeece14-35f8-a03c-b76b-e6229850e874" testName="BackstagePassQualityIncreasesByTwoWhenSellInReachesBetweenSixAndTenDays" computerName="WS-KWILLIAMS" duration="00:00:00.0002444" startTime="2012-10-08T08:45:09.6562773-04:00" endTime="2012-10-08T08:45:09.6562773-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a451710-e85d-44d2-af76-5bef058091f8">
+    </UnitTestResult>
+    <UnitTestResult executionId="a4ee6a78-e7d9-4ae1-b336-a18f0ee4a135" testId="a461a388-f879-aaf1-0d5b-96e359488f0b" testName="ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems" computerName="WS-KWILLIAMS" duration="00:00:00.0004688" startTime="2012-10-08T08:45:09.6562773-04:00" endTime="2012-10-08T08:45:09.6718779-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4ee6a78-e7d9-4ae1-b336-a18f0ee4a135">
+    </UnitTestResult>
+    <UnitTestResult executionId="c7a04078-6546-48c3-bf56-9be09dfa491d" testId="b25b1176-8d56-e62a-3696-f3a35826d4ba" testName="QualityIncreasesForAgedBrie" computerName="WS-KWILLIAMS" duration="00:00:00.0002540" startTime="2012-10-08T08:45:09.6718779-04:00" endTime="2012-10-08T08:45:09.6718779-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7a04078-6546-48c3-bf56-9be09dfa491d">
+    </UnitTestResult>
+    <UnitTestResult executionId="37473d06-4e27-4169-be57-ea9af550a95b" testId="ddf4f376-d23b-f447-f252-2fe1d83b1b05" testName="SellInForConjuredDecreasesByOne" computerName="WS-KWILLIAMS" duration="00:00:00.0002482" startTime="2012-10-08T08:45:09.6718779-04:00" endTime="2012-10-08T08:45:09.6718779-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37473d06-4e27-4169-be57-ea9af550a95b">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ec4e888-c99b-4d4a-bfb9-68cef4ad286b" testId="e11acf43-8b72-ef0a-3f56-4944d3063c48" testName="SulfurasNeverDegrades" computerName="WS-KWILLIAMS" duration="00:00:00.0002432" startTime="2012-10-08T08:45:09.6718779-04:00" endTime="2012-10-08T08:45:09.6718779-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ec4e888-c99b-4d4a-bfb9-68cef4ad286b">
+    </UnitTestResult>
+  </Results>
+</TestRun>
