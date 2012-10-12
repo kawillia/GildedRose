@@ -1,10 +1,6 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using GildedRose.Core.Items;
 using GildedRose.Core.Strategies.Quality;
-using GildedRose.Core.Items;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GildedRose.UnitTests.Strategies.Quality
 {

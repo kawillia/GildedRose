@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace GildedRose.UnitTests.Strategies.SellIn
 {
     [TestClass]
-    public class NormalSellInStrategyTests
+    public class DefaultSellInStrategyTests
     {
-        private NormalSellInStrategy strategy;
+        private DefaultSellInStrategy strategy;
 
-        public NormalSellInStrategyTests()
+        public DefaultSellInStrategyTests()
         {
-            strategy = new NormalSellInStrategy();
+            strategy = new DefaultSellInStrategy();
         }
 
         [TestMethod]

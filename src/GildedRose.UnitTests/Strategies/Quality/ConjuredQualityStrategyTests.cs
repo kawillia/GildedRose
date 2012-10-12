@@ -17,7 +17,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
         [TestMethod]
         public void QualityDecreasesByTwoWhenSellInIsGreaterThanOrEqualToZero()
         {
-            var item = new Conjured();
+            var item = new ConjuredItem();
             item.Quality = 49;
             item.SellIn = 0;
 
@@ -29,13 +29,25 @@ namespace GildedRose.UnitTests.Strategies.Quality
         [TestMethod]
         public void QualityDecreasesByFourWhenSellInIsGreaterThanOrEqualToZero()
         {
-            var item = new Conjured();
+            var item = new ConjuredItem();
             item.Quality = 49;
             item.SellIn = -1;
 
             strategy.UpdateQuality(item);
 
             Assert.AreEqual(45, item.Quality);
+        }
+
+        [TestMethod]
+        public void QualityDoesNotGoBelowZero()
+        {
+            var item = new ConjuredItem();
+            item.Quality = 0;
+            item.SellIn = -1;
+
+            strategy.UpdateQuality(item);
+
+            Assert.AreEqual(0, item.Quality);
         }
     }
 }

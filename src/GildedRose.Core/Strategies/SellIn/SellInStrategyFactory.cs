@@ -9,7 +9,7 @@ namespace GildedRose.Core.Strategies.SellIn
             if (item is Sulfuras)
                 return new SulfurasSellInStrategy();
 
-            return new NormalSellInStrategy();
+            return new DefaultSellInStrategy();
         }
     }
 }

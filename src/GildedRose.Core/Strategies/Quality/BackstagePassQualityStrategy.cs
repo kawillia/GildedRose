@@ -4,24 +4,24 @@ namespace GildedRose.Core.Strategies.Quality
 {
     public class BackstagePassQualityStrategy : IQualityStrategy
     {
-        public void UpdateQuality(Item item)
+        public void UpdateQuality(Item backstagePass)
         {
-            if (item.SellIn > 0)
+            if (backstagePass.SellIn > 0)
             {
-                item.Quality++;
+                backstagePass.Quality++;
 
-                if (item.SellIn <= 10)
-                    item.Quality++;
+                if (backstagePass.SellIn <= 10)
+                    backstagePass.Quality++;
 
-                if (item.SellIn <= 5)
-                    item.Quality++;
+                if (backstagePass.SellIn <= 5)
+                    backstagePass.Quality++;
 
-                if (item.Quality >= 50)
-                    item.Quality = 50;
+                if (backstagePass.Quality >= 50)
+                    backstagePass.Quality = 50;
             }
             else
             {
-                item.Quality = 0;
+                backstagePass.Quality = 0;
             }            
         }
     }

@@ -2,7 +2,7 @@
 
 namespace GildedRose.Core.Strategies.SellIn
 {
-    public class NormalSellInStrategy : ISellInStrategy
+    public class DefaultSellInStrategy : ISellInStrategy
     {
         public void UpdateSellIn(Item item)
         {

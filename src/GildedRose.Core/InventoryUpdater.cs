@@ -5,31 +5,28 @@ using GildedRose.Core.Strategies.SellIn;
 
 namespace GildedRose.Core
 {
-    public class ItemsProcessor
+    public class InventoryUpdater
     {
         private IEnumerable<Item> items;
 
-        public ItemsProcessor(IEnumerable<Item> items)
+        public InventoryUpdater(IEnumerable<Item> items)
         {
             this.items = items;
         }
 
-        public void Process()
+        public void Update()
         {
             foreach (var item in items)
-                ProcessItem(item);
+                UpdateItem(item);
         }
 
-        private static void ProcessItem(Item item)
+        private static void UpdateItem(Item item)
         {
             var sellInStrategy = SellInStrategyFactory.GetStrategy(item);
             sellInStrategy.UpdateSellIn(item);
 
-            if (item.Quality > 0)
-            {
-                var qualityStrategy = QualityStrategyFactory.GetStrategy(item);
-                qualityStrategy.UpdateQuality(item);
-            }
+            var qualityStrategy = QualityStrategyFactory.GetStrategy(item);
+            qualityStrategy.UpdateQuality(item);
         }
     }
 }

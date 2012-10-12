@@ -42,7 +42,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
         [TestMethod]
         public void GetStrategyReturnsConjuredQualityStrategyForConjured()
         {
-            var strategy = QualityStrategyFactory.GetStrategy(new Conjured());
+            var strategy = QualityStrategyFactory.GetStrategy(new ConjuredItem());
 
             Assert.IsInstanceOfType(strategy, typeof(ConjuredQualityStrategy));
         }

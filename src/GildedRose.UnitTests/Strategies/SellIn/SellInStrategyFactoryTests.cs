@@ -12,7 +12,7 @@ namespace GildedRose.UnitTests.Strategies.SellIn
         {
             var strategy = SellInStrategyFactory.GetStrategy(new Item());
 
-            Assert.IsInstanceOfType(strategy, typeof(NormalSellInStrategy));
+            Assert.IsInstanceOfType(strategy, typeof(DefaultSellInStrategy));
         }
 
         [TestMethod]

@@ -37,5 +37,17 @@ namespace GildedRose.UnitTests.Strategies.Quality
 
             Assert.AreEqual(47, item.Quality);
         }
+
+        [TestMethod]
+        public void QualityDoesNotGoBelowZero()
+        {
+            var item = new Item();
+            item.Quality = 0;
+            item.SellIn = -1;
+
+            strategy.UpdateQuality(item);
+
+            Assert.AreEqual(0, item.Quality);
+        }
     }
 }

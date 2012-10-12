@@ -1,7 +1,5 @@
-﻿
-namespace GildedRose.Core.Items
+﻿namespace GildedRose.Core.Items
 {
     public class AgedBrie : Item
-    {
-    }
+    { }
 }

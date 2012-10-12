@@ -15,7 +15,7 @@ namespace GildedRose.Core.Strategies.Quality
             if (item is BackstagePass)
                 return new BackstagePassQualityStrategy();
 
-            if (item is Conjured)
+            if (item is ConjuredItem)
                 return new ConjuredQualityStrategy();
 
             return new DefaultQualityStrategy();

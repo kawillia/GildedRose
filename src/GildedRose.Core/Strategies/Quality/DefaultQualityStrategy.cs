@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using GildedRose.Core.Items;
+﻿using GildedRose.Core.Items;
 
 namespace GildedRose.Core.Strategies.Quality
 {
@@ -14,6 +10,9 @@ namespace GildedRose.Core.Strategies.Quality
                 item.Quality -= 2;
             else
                 item.Quality -= 1;
+
+            if (item.Quality < 0)
+                item.Quality = 0;
         }
     }
 }

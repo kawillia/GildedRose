@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using GildedRose.Core.Items;
+﻿using GildedRose.Core.Items;
 
 namespace GildedRose.Core.Strategies.Quality
 {
     public class AgedBrieQualityStrategy : IQualityStrategy
     {
-        public void UpdateQuality(Item item)
+        public void UpdateQuality(Item brie)
         {
-            if (item.Quality < 50)
-                item.Quality++;
+            if (brie.Quality < 50)
+                brie.Quality++;
         }
     }
 }

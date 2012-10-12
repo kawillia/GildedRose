@@ -6,16 +6,16 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace GildedRose.UnitTests
 {
     [TestClass]
-    public class GildedRoseProcessorTests
+    public class InventoryUpdaterTests
     {
-        private ItemsProcessor processor;
+        private InventoryUpdater updater;
 
         [TestMethod]
         public void SellInForNormalItemDecreasesByOne()
         {
             var cake = new Item { Name = "Conjured Mana Cake", SellIn = 0, Quality = 0 };
-            processor = new ItemsProcessor(new[] { cake });
-            processor.Process();
+            updater = new InventoryUpdater(new[] { cake });
+            updater.Update();
 
             Assert.AreEqual(-1, cake.SellIn);
         }
@@ -24,7 +24,7 @@ namespace GildedRose.UnitTests
         public void SellInForAgedBrieDecreasesByOne()
         {
             var brie = new AgedBrie { Name = "Aged Brie", SellIn = 5, Quality = 0 };
-            processor = new ItemsProcessor(new[] { brie });
+            updater = new InventoryUpdater(new[] { brie });
             ProcessMany(10);
 
             Assert.AreEqual(-5, brie.SellIn);
@@ -34,7 +34,7 @@ namespace GildedRose.UnitTests
         public void SellInForBackstagePassDecreasesByOne()
         {
             var backstagePass = new BackstagePass { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 3, Quality = 0 };
-            processor = new ItemsProcessor(new[] { backstagePass });
+            updater = new InventoryUpdater(new[] { backstagePass });
             ProcessMany(10);
 
             Assert.AreEqual(-7, backstagePass.SellIn);
@@ -43,8 +43,8 @@ namespace GildedRose.UnitTests
         [TestMethod]
         public void SellInForConjuredDecreasesByOne()
         {
-            var conjured = new Conjured { Name = "Conjured Mana Cake", SellIn = 0, Quality = 0 };
-            processor = new ItemsProcessor(new[] { conjured });
+            var conjured = new ConjuredItem { Name = "Conjured Mana Cake", SellIn = 0, Quality = 0 };
+            updater = new InventoryUpdater(new[] { conjured });
             ProcessMany(10);
 
             Assert.AreEqual(-10, conjured.SellIn);
@@ -54,8 +54,18 @@ namespace GildedRose.UnitTests
         public void QualityOfAnItemIsNeverNegative()
         {
             var cake = new Item { Name = "Conjured Mana Cake", SellIn = -1, Quality = 0 };
-            processor = new ItemsProcessor(new[] { cake });
-            processor.Process();
+            updater = new InventoryUpdater(new[] { cake });
+            updater.Update();
+
+            Assert.AreEqual(0, cake.Quality);
+        }
+
+        [TestMethod]
+        public void QualityOfAConjuredItemIsNeverNegative()
+        {
+            var cake = new ConjuredItem { Name = "Conjured Mana Cake", SellIn = -1, Quality = 0 };
+            updater = new InventoryUpdater(new[] { cake });
+            updater.Update();
 
             Assert.AreEqual(0, cake.Quality);
         }
@@ -64,8 +74,8 @@ namespace GildedRose.UnitTests
         public void QualityDegradesTwiceAsFastForNormalItem()
         {
             var cake = new Item { Name = "Conjured Mana Cake", SellIn = -1, Quality = 2 };
-            processor = new ItemsProcessor(new[] { cake });
-            processor.Process();
+            updater = new InventoryUpdater(new[] { cake });
+            updater.Update();
 
             Assert.AreEqual(0, cake.Quality);
         }
@@ -74,8 +84,8 @@ namespace GildedRose.UnitTests
         public void QualityOfAnItemIsNeverGreaterThanFifty()
         {
             var brie = new AgedBrie { Name = "Aged Brie", SellIn = 0, Quality = 50 };
-            processor = new ItemsProcessor(new[] { brie });
-            processor.Process();
+            updater = new InventoryUpdater(new[] { brie });
+            updater.Update();
 
             Assert.AreEqual(50, brie.Quality);
         }
@@ -84,7 +94,7 @@ namespace GildedRose.UnitTests
         public void QualityIncreasesForAgedBrie()
         {
             var brie = new AgedBrie { Name = "Aged Brie", SellIn = 5, Quality = 10 };
-            processor = new ItemsProcessor(new[] { brie });
+            updater = new InventoryUpdater(new[] { brie });
             ProcessMany(10);
 
             Assert.AreEqual(20, brie.Quality);
@@ -94,7 +104,7 @@ namespace GildedRose.UnitTests
         public void SulfurasNeverHasToBeSold()
         {
             var sulfuras = new Sulfuras { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
-            processor = new ItemsProcessor(new[] { sulfuras });
+            updater = new InventoryUpdater(new[] { sulfuras });
             ProcessMany(10);
 
             Assert.AreEqual(5, sulfuras.SellIn);
@@ -104,7 +114,7 @@ namespace GildedRose.UnitTests
         public void SulfurasNeverDegrades()
         {
             var sulfuras = new Sulfuras { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
-            processor = new ItemsProcessor(new[] { sulfuras });
+            updater = new InventoryUpdater(new[] { sulfuras });
             ProcessMany(10);
 
             Assert.AreEqual(10, sulfuras.Quality);
@@ -114,7 +124,7 @@ namespace GildedRose.UnitTests
         public void BackstagePassQualityIncreasesByTwoWhenSellInReachesBetweenSixAndTenDays()
         {
             var backstagePass = new BackstagePass { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 11, Quality = 10 };
-            processor = new ItemsProcessor(new[] { backstagePass });
+            updater = new InventoryUpdater(new[] { backstagePass });
             ProcessMany(5);
 
             Assert.AreEqual(20, backstagePass.Quality);
@@ -124,7 +134,7 @@ namespace GildedRose.UnitTests
         public void BackstagePassQualityIncreasesByThreeWhenSellInReachesBetweenFiveAndZeroDays()
         {
             var backstagePass = new BackstagePass { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 6, Quality = 10 };
-            processor = new ItemsProcessor(new[] { backstagePass });
+            updater = new InventoryUpdater(new[] { backstagePass });
             ProcessMany(4);
 
             Assert.AreEqual(22, backstagePass.Quality);
@@ -134,7 +144,7 @@ namespace GildedRose.UnitTests
         public void BackstagePassQualityDropsToZeroAfterTheConcert()
         {
             var backstagePass = new BackstagePass { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 10 };
-            processor = new ItemsProcessor(new[] { backstagePass });
+            updater = new InventoryUpdater(new[] { backstagePass });
             ProcessMany(5);
 
             Assert.AreEqual(0, backstagePass.Quality);
@@ -144,7 +154,7 @@ namespace GildedRose.UnitTests
         public void BackstagePassQualityIncreasesByOneTenDays()
         {
             var backstagePass = new BackstagePass { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 20, Quality = 10 };
-            processor = new ItemsProcessor(new[] { backstagePass });
+            updater = new InventoryUpdater(new[] { backstagePass });
             ProcessMany(9);
 
             Assert.AreEqual(19, backstagePass.Quality);
@@ -153,8 +163,8 @@ namespace GildedRose.UnitTests
         [TestMethod]
         public void ConjuredItemsDegradeInQualityTwiceAsFastAsNormalItems()
         {
-            var conjuredItem = new Conjured { Name = "Conjured Mana Cake", SellIn = 3, Quality = 6 };
-            processor = new ItemsProcessor(new[] { conjuredItem });
+            var conjuredItem = new ConjuredItem { Name = "Conjured Mana Cake", SellIn = 3, Quality = 6 };
+            updater = new InventoryUpdater(new[] { conjuredItem });
             ProcessMany(3);
 
             Assert.AreEqual(0, conjuredItem.Quality);
@@ -163,7 +173,7 @@ namespace GildedRose.UnitTests
         private void ProcessMany(Int32 numberToProcess)
         {
             for (var i = 0; i < numberToProcess; i++)
-                processor.Process();
+                updater.Update();
         }
     }
 }

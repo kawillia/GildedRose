@@ -41,9 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Items\AgedBrie.cs" />
-    <Compile Include="ItemsProcessor.cs" />
+    <Compile Include="InventoryUpdater.cs" />
     <Compile Include="Items\BackstagePass.cs" />
-    <Compile Include="Items\Conjured.cs" />
+    <Compile Include="Items\ConjuredItem.cs" />
     <Compile Include="Items\Item.cs" />
     <Compile Include="Items\Sulfuras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,7 +56,7 @@
     <Compile Include="Strategies\Quality\QualityStrategyFactory.cs" />
     <Compile Include="Strategies\SellIn\SulfurasSellInStrategy.cs" />
     <Compile Include="Strategies\SellIn\ISellInStrategy.cs" />
-    <Compile Include="Strategies\SellIn\NormalSellInStrategy.cs" />
+    <Compile Include="Strategies\SellIn\DefaultSellInStrategy.cs" />
     <Compile Include="Strategies\SellIn\SellInStrategyFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
