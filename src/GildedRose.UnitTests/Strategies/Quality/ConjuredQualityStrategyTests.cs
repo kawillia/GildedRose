@@ -11,7 +11,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
 
         public ConjuredQualityStrategyTests()
         {
-            strategy = new ConjuredQualityStrategy();
+            strategy = new ConjuredQualityStrategy(new QualityNeverDegradesBelowZeroStrategy());
         }
 
         [TestMethod]

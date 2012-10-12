@@ -2,12 +2,16 @@
 
 namespace GildedRose.Core.Strategies.Quality
 {
-    public class AgedBrieQualityStrategy : IQualityStrategy
+    public class AgedBrieQualityStrategy : QualityStrategyDecorator
     {
-        public void UpdateQuality(Item brie)
+        public AgedBrieQualityStrategy(IQualityStrategy strategy) 
+            : base(strategy) { }
+
+        public override void UpdateQuality(Item brie)
         {
-            if (brie.Quality < 50)
-                brie.Quality++;
+            brie.Quality++;
+
+            base.UpdateQuality(brie);
         }
     }
 }

@@ -7,18 +7,18 @@ namespace GildedRose.Core.Strategies.Quality
         public static IQualityStrategy GetStrategy(Item item)
         {
             if (item is AgedBrie)
-                return new AgedBrieQualityStrategy();
+                return new AgedBrieQualityStrategy(new QualityNeverIncreasesAboveFiftyStrategy());
 
             if (item is Sulfuras)
                 return new SulfurasQualityStrategy();
 
             if (item is BackstagePass)
-                return new BackstagePassQualityStrategy();
+                return new BackstagePassQualityStrategy(new QualityNeverIncreasesAboveFiftyStrategy());
 
             if (item is ConjuredItem)
-                return new ConjuredQualityStrategy();
+                return new ConjuredQualityStrategy(new QualityNeverDegradesBelowZeroStrategy());
 
-            return new DefaultQualityStrategy();
+            return new DefaultQualityStrategy(new QualityNeverDegradesBelowZeroStrategy());
         }
     }
 }

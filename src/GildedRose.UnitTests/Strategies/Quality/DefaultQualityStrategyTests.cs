@@ -1,5 +1,6 @@
 ﻿using GildedRose.Core.Items;
 using GildedRose.Core.Strategies.Quality;
+using GildedRose.UnitTests.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GildedRose.UnitTests.Strategies.Quality
@@ -11,7 +12,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
 
         public DefaultQualityStrategyTests()
         {
-            strategy = new DefaultQualityStrategy();
+            strategy = new DefaultQualityStrategy(new FakeQualityStrategy());
         }
 
         [TestMethod]
@@ -36,18 +37,6 @@ namespace GildedRose.UnitTests.Strategies.Quality
             strategy.UpdateQuality(item);
 
             Assert.AreEqual(47, item.Quality);
-        }
-
-        [TestMethod]
-        public void QualityDoesNotGoBelowZero()
-        {
-            var item = new Item();
-            item.Quality = 0;
-            item.SellIn = -1;
-
-            strategy.UpdateQuality(item);
-
-            Assert.AreEqual(0, item.Quality);
         }
     }
 }

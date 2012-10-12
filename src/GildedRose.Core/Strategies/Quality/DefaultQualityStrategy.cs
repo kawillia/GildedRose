@@ -2,17 +2,19 @@
 
 namespace GildedRose.Core.Strategies.Quality
 {
-    public class DefaultQualityStrategy : IQualityStrategy
+    public class DefaultQualityStrategy : QualityStrategyDecorator
     {
-        public void UpdateQuality(Item item)
+        public DefaultQualityStrategy(IQualityStrategy strategy) 
+            : base(strategy) { }
+
+        public override void UpdateQuality(Item item)
         {
             if (item.SellIn < 0)
                 item.Quality -= 2;
             else
                 item.Quality -= 1;
 
-            if (item.Quality < 0)
-                item.Quality = 0;
+            base.UpdateQuality(item);
         }
     }
 }

@@ -2,9 +2,13 @@
 
 namespace GildedRose.Core.Strategies.Quality
 {
-    public class BackstagePassQualityStrategy : IQualityStrategy
+    public class BackstagePassQualityStrategy : QualityStrategyDecorator
     {
-        public void UpdateQuality(Item backstagePass)
+        public BackstagePassQualityStrategy(IQualityStrategy strategy)
+            : base(strategy)
+        { }
+
+        public override void UpdateQuality(Item backstagePass)
         {
             if (backstagePass.SellIn > 0)
             {
@@ -15,14 +19,13 @@ namespace GildedRose.Core.Strategies.Quality
 
                 if (backstagePass.SellIn <= 5)
                     backstagePass.Quality++;
-
-                if (backstagePass.Quality >= 50)
-                    backstagePass.Quality = 50;
             }
             else
             {
                 backstagePass.Quality = 0;
-            }            
+            }
+
+            base.UpdateQuality(backstagePass);
         }
     }
 }

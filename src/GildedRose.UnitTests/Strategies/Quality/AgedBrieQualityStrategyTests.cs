@@ -1,6 +1,7 @@
 ﻿using GildedRose.Core.Items;
 using GildedRose.Core.Strategies.Quality;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using GildedRose.UnitTests.Fakes;
 
 namespace GildedRose.UnitTests.Strategies.Quality
 {
@@ -11,18 +12,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
 
         public AgedBrieQualityStrategyTests()
         {
-            strategy = new AgedBrieQualityStrategy();
-        }
-
-        [TestMethod]
-        public void QualityDoesNotGoAboveFifty()
-        {
-            var item = new AgedBrie();
-            item.Quality = 50;
-
-            strategy.UpdateQuality(item);
-
-            Assert.AreEqual(50, item.Quality);
+            strategy = new AgedBrieQualityStrategy(new FakeQualityStrategy());
         }
 
         [TestMethod]

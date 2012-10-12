@@ -2,17 +2,19 @@
 
 namespace GildedRose.Core.Strategies.Quality
 {
-    public class ConjuredQualityStrategy : IQualityStrategy
+    public class ConjuredQualityStrategy : QualityStrategyDecorator
     {
-        public void UpdateQuality(Item conjuredItem)
+        public ConjuredQualityStrategy(IQualityStrategy strategy)
+            : base(strategy) { }
+
+        public override void UpdateQuality(Item conjuredItem)
         {
             if (conjuredItem.SellIn < 0)
                 conjuredItem.Quality -= 4;
             else
                 conjuredItem.Quality -= 2;
 
-            if (conjuredItem.Quality < 0)
-                conjuredItem.Quality = 0;
+            base.UpdateQuality(conjuredItem);
         }
     }
 }

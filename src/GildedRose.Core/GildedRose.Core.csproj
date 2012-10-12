@@ -50,6 +50,9 @@
     <Compile Include="Strategies\Quality\AgedBrieQualityStrategy.cs" />
     <Compile Include="Strategies\Quality\BackstagePassQualityStrategy.cs" />
     <Compile Include="Strategies\Quality\ConjuredQualityStrategy.cs" />
+    <Compile Include="Strategies\Quality\QualityNeverDegradesBelowZeroStrategy.cs" />
+    <Compile Include="Strategies\Quality\QualityNeverIncreasesAboveFiftyStrategy.cs" />
+    <Compile Include="Strategies\Quality\QualityStrategyDecorator.cs" />
     <Compile Include="Strategies\Quality\SulfurasQualityStrategy.cs" />
     <Compile Include="Strategies\Quality\IQualityStrategy.cs" />
     <Compile Include="Strategies\Quality\DefaultQualityStrategy.cs" />

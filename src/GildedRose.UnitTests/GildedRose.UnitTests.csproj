@@ -45,11 +45,14 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fakes\FakeQualityStrategy.cs" />
     <Compile Include="InventoryUpdaterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\Quality\AgedBrieQualityStrategyTests.cs" />
     <Compile Include="Strategies\Quality\BackstagePassQualityStrategyTests.cs" />
     <Compile Include="Strategies\Quality\ConjuredQualityStrategyTests.cs" />
+    <Compile Include="Strategies\Quality\QualityNeverDegradesBelowZeroStrategyTests.cs" />
+    <Compile Include="Strategies\Quality\QualityNeverIncreasesAboveFiftyStrategyTests.cs" />
     <Compile Include="Strategies\Quality\SulfurasQualityStrategyTests.cs" />
     <Compile Include="Strategies\Quality\DefaultQualityStrategyTests.cs" />
     <Compile Include="Strategies\SellIn\SulfurasSellInStrategyTests.cs" />
@@ -63,6 +66,7 @@
       <Name>GildedRose.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

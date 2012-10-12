@@ -11,7 +11,7 @@ namespace GildedRose.UnitTests.Strategies.Quality
 
         public BackstagePassQualityStrategyTests()
         {
-            strategy = new BackstagePassQualityStrategy();
+            strategy = new BackstagePassQualityStrategy(new QualityNeverIncreasesAboveFiftyStrategy());
         }
 
         [TestMethod]
