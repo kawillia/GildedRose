@@ -2,7 +2,7 @@
 
 namespace GildedRose.Core.Strategies.Quality
 {
-    public class SulfurasQualityStrategy : IQualityStrategy
+    public class LegendaryQualityStrategy : IQualityStrategy
     {
         public void UpdateQuality(Item sulfuras)
         { }

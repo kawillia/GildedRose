@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace GildedRose.UnitTests.Strategies.Quality
 {
     [TestClass]
-    public class SulfurasQualityStrategyTests
+    public class LegendaryQualityStrategyTests
     {
-        private SulfurasQualityStrategy strategy;
+        private LegendaryQualityStrategy strategy;
 
-        public SulfurasQualityStrategyTests()
+        public LegendaryQualityStrategyTests()
         {
-            strategy = new SulfurasQualityStrategy();
+            strategy = new LegendaryQualityStrategy();
         }
 
         [TestMethod]

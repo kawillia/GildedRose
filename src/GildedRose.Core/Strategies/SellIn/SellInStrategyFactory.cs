@@ -6,7 +6,7 @@ namespace GildedRose.Core.Strategies.SellIn
     {
         public static ISellInStrategy GetStrategy(Item item)
         {
-            if (item is Sulfuras)
+            if (item is LegendaryItem)
                 return new SulfurasSellInStrategy();
 
             return new DefaultSellInStrategy();

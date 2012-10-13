@@ -103,7 +103,7 @@ namespace GildedRose.UnitTests
         [TestMethod]
         public void SulfurasNeverHasToBeSold()
         {
-            var sulfuras = new Sulfuras { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
+            var sulfuras = new LegendaryItem { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
             updater = new InventoryUpdater(new[] { sulfuras });
             ProcessMany(10);
 
@@ -113,7 +113,7 @@ namespace GildedRose.UnitTests
         [TestMethod]
         public void SulfurasNeverDegrades()
         {
-            var sulfuras = new Sulfuras { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
+            var sulfuras = new LegendaryItem { Name = "Sulfuras, Hand of Ragnaros", SellIn = 5, Quality = 10 };
             updater = new InventoryUpdater(new[] { sulfuras });
             ProcessMany(10);
 

@@ -26,9 +26,9 @@ namespace GildedRose.UnitTests.Strategies.Quality
         [TestMethod]
         public void GetStrategyReturnsSulfurasQualityStrategyForSulfuras()
         {
-            var strategy = QualityStrategyFactory.GetStrategy(new Sulfuras());
+            var strategy = QualityStrategyFactory.GetStrategy(new LegendaryItem());
 
-            Assert.IsInstanceOfType(strategy, typeof(SulfurasQualityStrategy));
+            Assert.IsInstanceOfType(strategy, typeof(LegendaryQualityStrategy));
         }
 
         [TestMethod]

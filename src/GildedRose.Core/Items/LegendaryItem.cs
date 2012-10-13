@@ -1,5 +1,5 @@
 ﻿namespace GildedRose.Core.Items
 {
-    public class Sulfuras : Item
+    public class LegendaryItem : Item
     { }
 }

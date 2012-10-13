@@ -13,7 +13,8 @@ namespace GildedRose.Core.Strategies.Quality
 
         public virtual void UpdateQuality(Item item)
         {
-            strategy.UpdateQuality(item);
+            if (strategy != null)
+                strategy.UpdateQuality(item);
         }
     }
 }

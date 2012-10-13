@@ -53,7 +53,7 @@
     <Compile Include="Strategies\Quality\ConjuredQualityStrategyTests.cs" />
     <Compile Include="Strategies\Quality\QualityNeverDegradesBelowZeroStrategyTests.cs" />
     <Compile Include="Strategies\Quality\QualityNeverIncreasesAboveFiftyStrategyTests.cs" />
-    <Compile Include="Strategies\Quality\SulfurasQualityStrategyTests.cs" />
+    <Compile Include="Strategies\Quality\LegendaryQualityStrategyTests.cs" />
     <Compile Include="Strategies\Quality\DefaultQualityStrategyTests.cs" />
     <Compile Include="Strategies\SellIn\SulfurasSellInStrategyTests.cs" />
     <Compile Include="Strategies\SellIn\DefaultSellInStrategyTests.cs" />

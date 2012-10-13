@@ -9,8 +9,8 @@ namespace GildedRose.Core.Strategies.Quality
             if (item is AgedBrie)
                 return new AgedBrieQualityStrategy(new QualityNeverIncreasesAboveFiftyStrategy());
 
-            if (item is Sulfuras)
-                return new SulfurasQualityStrategy();
+            if (item is LegendaryItem)
+                return new LegendaryQualityStrategy();
 
             if (item is BackstagePass)
                 return new BackstagePassQualityStrategy(new QualityNeverIncreasesAboveFiftyStrategy());

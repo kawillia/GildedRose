@@ -18,7 +18,7 @@ namespace GildedRose.UnitTests.Strategies.SellIn
         [TestMethod]
         public void GetStrategyReturnsAgedBrieQualityStrategyForAgedBrie()
         {
-            var strategy = SellInStrategyFactory.GetStrategy(new Sulfuras());
+            var strategy = SellInStrategyFactory.GetStrategy(new LegendaryItem());
 
             Assert.IsInstanceOfType(strategy, typeof(SulfurasSellInStrategy));
         }
