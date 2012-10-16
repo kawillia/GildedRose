@@ -1,2 +1,3 @@
 GildedRose
 ==========
+This is a kata that can be found at http://craftsmanship.sv.cmu.edu/posts/gilded-rose-kata.  The purpose of the kata was to refactor the existing code. As this is a kata, I did not add extensive error checking/handling, but I focused on covering the strategies under tests and building a system that was flexible and that would be easy to update if new items were added to the inventory.
